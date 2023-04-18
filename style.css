@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+body {
+  background-color: var(--Dark-Blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  padding: 40px;
+}
+.card-conselho {
+  max-width: 100%;
+  width: 500px;
+  background-color: var(--Dark-Grayish-Blue);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.205);
+}
+.conselho-numero {
+  color: var(--Neon-Green);
+  font-weight: 600;
+  font-size: 18px;
+}
+.conselho {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 20px 0;
+  color: var(--Light-Cyan);
+  letter-spacing: 1px;
+}
+.card-conselho button {
+  margin-top: 20px;
+  border: none;
+  background-color: var(--Neon-Green);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  position: absolute;
+  right: 50%;
+  top: 82%;
+  transform: translate(50%);
+  cursor: pointer;
+  transition: 0.4s 0.2s ease;
+}
+.card-conselho button.ativo {
+  box-shadow: 0 0 50px var(--Neon-Green);
+}
+.card-conselho button.ativo img {
+  animation: rotate-image 0.5s infinite linear;
+}
+@keyframes rotate-image {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(260deg);
+  }
+}
+.attribution {
+  display: none;
+}
+.sem-internet {
+  position: fixed;
+  left: 100%;
+  bottom: 40px;
+  background-color: hsl(219, 8%, 35%);
+  padding: 20px 20px;
+  border-radius: 10px;
+  color: white;
+  border-left: 5px solid rgb(195, 206, 179);
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  z-index: 999;
+  
+}
+
+.sem-internet .image {
+  background-color: rgb(232, 248, 208);
+  padding: 10px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.sem-internet .image img {
+  width: 50px;
+}
+.sem-internet h3 {
+  font-size: 20px;
+}
+.sem-internet p {
+  font-size: 16px;
+}
+.sem-internet .icon {
+  background-color: #fbdbec;
+}
+
+body.ativo-modal-internet .overline-blur {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.11);
+}
+body.ativo-modal-internet .sem-internet {
+  left: 30px;
+}
