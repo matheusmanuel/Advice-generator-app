@@ -38,7 +38,7 @@ Você pode usar qualquer ferramenta que desejar para ajudá-lo a concluir o desa
 
 ## Autor
 
-- Website - [Matheus manuel](https://matheusmanuel.github.io/)
+- Website - [https://matheusmanuel.netlify.app/](https://matheusmanuel.netlify.app/)
 - Frontend Mentor - [@matheusmanuel](https://www.frontendmentor.io/profile/matheusmanuel)
 - instagram - [@matheusmanuel.dev/](https://www.instagram.com/matheusmanuel.dev/)
 - youtube - [@mathesmanuel](https://youtube.com/matheusmanuel)
